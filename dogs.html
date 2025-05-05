@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Class Activities - Dogs</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header id="navbar"></header>
+
+  <main>
+    <h1>Dog Gallery</h1>
+
+    <div id="carousel" class="simple-slider"></div>
+
+    <h2>Dog Breeds</h2>
+    <div id="breedButtons" class="button-container"></div>
+
+    <div id="breedInfo" style="display:none; margin-top: 20px;">
+      <h3 id="breedName"></h3>
+      <p id="breedDescription"></p>
+      <p><strong>Life Span:</strong> <span id="lifeSpan"></span> years</p>
+    </div>
+  </main>
+
+  <section id="audio-instructions">
+    <h3>Voice Commands</h3>
+    <p>Say "hello" – will alert Hello World</p>
+    <p>Say "change the color to red/blue/etc."</p>
+    <p>Say "navigate to home/stocks/dogs"</p>
+    <p>Say "load dog breed golden retriever" – shows breed info</p>
+    <button onclick="annyang.start()">Turn On Audio</button>
+    <button onclick="annyang.abort()">Turn Off Audio</button>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+  <script src="libs/simple-slider.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/dogs.js"></script>
+</body>
+</html>
